@@ -76,4 +76,10 @@ var historialVentas = [8, "electronicos", true, 88, undefined ]
 console.log("Holamundo")
 
 //ejercicio 3 imprimir el tipo de dato de nuestras variables
+console. log ("Tipo de dato=", typeof Nombre)
+console. log ("Tipo de dato=", typeof gastos)
+console. log ("Tipo de dato=", typeof donadorOrganos)
+console. log ("Tipo de dato=", typeof indefinido)
+console. log ("Tipo de dato=", typeof compra )
+console. log ("Tipo de dato=", typeof actividades)
 console. log ("Tipo de dato=", typeof miarreglo)
