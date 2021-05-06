@@ -183,8 +183,8 @@ console.log("Result ===>", result)
 
 // 2.- Crear una función que retorne los numeros impares de la respuesta de la función anterior
 console.log("2.- Crear una función que retorne los numeros impares de la respuesta de la función anterior")
-const filterNumber = (array) => {
-  const resultsArray = array.filter((numero) => {
+const filterNumber = (array1) => {
+  const resultsArray = array1.filter((numero) => {
     if (numero % 2 ) {
       return numero
     }
@@ -192,20 +192,20 @@ const filterNumber = (array) => {
 
   return resultsArray
 }
-const myOArray=[ 225, 250000, 9025, 7569, 1156, 5776 ]
-const resultFilter = filterNumber(myOArray)
+
+const resultFilter = filterNumber(result)
  
 
-console.log("ArrayOriginal ===>", myOArray)
+console.log("ArrayOriginal ===>", result)
  console.log("resultFilter ===>", resultFilter)
  
 
 
 //3.- Crear una función que sume los numeros impares y devuelva la raíz cuadrada del resultado
 console.log("3.- Crear una función que sume los numeros impares y devuelva la raíz cuadrada del resultado")
-const array1 = [225, 9025, 7569];
-const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
-console.log(("SumaImpares ===>"), array1.reduce(reducer));
+const reducer = (accumulator, currentValue) => accumulator + currentValue
 
-console.log(("Raiz ===>"),Math.sqrt(array1.reduce(reducer )) );
+console.log(("SumaImpares ===>"),resultFilter  .reduce(reducer))
+
+console.log(("Raiz ===>"),Math.sqrt(resultFilter .reduce(reducer )) )
