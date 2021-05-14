@@ -42,40 +42,41 @@ document.body.appendChild()
 
 
 
-/** 
+ /** 
 const myNewA = document.createElement("a") 
 myNewA.setAttribute("href", "http://www.google.es")
 
-const Atexto = document.createTextNode("Hola Google") 
+const Atexto = document.createTextNode("Buscar en Google") 
+
 
 myNewA.appendChild(Atexto)
 
-document.body.appendChild(myNewA)*/
 
-var body = document.getElementsByTagName("body")
-// Creamos un elemento <table> y un elemento <tbody>
-var tabla = document.createElement("table");
-var tblBody = document.createElement("tbody");
-// Creamos las celdas
+document.body.appendChild(myNewA)*/
+ 
+var body = document.getElementsByTagName("body")[0]
+
+var tabla = document.createElement("table")
+var tblBody = document.createElement("tbody")
+
 for (var i = 0; i < 2; i++) {
-    // Creamos las hileras de la tabla
-    var fila = document.createElement("tr");
+    
+    var fila = document.createElement("tr")
     for (var j = 0; j < 2; j++) {
-      // Crea un elemento <td> y un nodo de texto, hace que el nodo de
-      // texto sea el contenido de <td>, ubica el elemento <td> al final
-      // de la hilera de la tabla
-      var celda = document.createElement("td");
-      var textoCelda = document.createTextNode(" ---- " );
-      celda.appendChild(textoCelda);
-      fila.appendChild(celda);
+     
+      var celda = document.createElement("td")
+      var textoCelda = document.createTextNode(" ---- " )
+      celda.appendChild(textoCelda)
+      fila.appendChild(celda)
     }
-  // agregamos la hilera al final de la tabla (al final del elemento tblbody)
+  
   tblBody.appendChild(fila);
   }
-  // posicionamos el <tbody> debajo del elemento <table>
+  
   tabla.appendChild(tblBody);
-  // appends <table> into <body>
+ 
   body.appendChild(tabla);
+  
+  tabla.setAttribute("border", 2);
   tabla.setAttribute("id", "tabla");
-  var result = document.getElementById("resultado");
-  result.appendChild(tabla);
+ 

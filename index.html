@@ -6,14 +6,38 @@
     <title>EDUSITE</title>
 </head>
 <body>
-   <!--<input type="button" value="Genera una tabla" onclick="genera_tabla()">-->
-    <div id="tabla" >
+    <div>
+      <span>Peso:</span>
+      <input type="number" id="weight" />
     </div>
+    <div>
+        <span>Altura:</span>
+        <input type="number" id="height" />
+      </div>
+      <h2 id="result-addition"></h2>
+    
+      <p>IMC: <span id="imc"></span></p>
+      <p>Lectura: <span id="lectura"></span></p> 
+      
+   <!--<input type="button" value="Genera una tabla" onclick="genera_tabla()">-->
+   
+   <div id="container" >
+    </div>
+    <h1 id="my-title">My title</h1>
+    <label id="globo">🎈</label>
 
     
-<script src="Dom.js">
+
+<script src="eventListeners.js"type="module"></script>
+<script src="Dom.js"></script>
+
+
+
+
+
+
  
-</script>
+
 </body>
 </html>
 
